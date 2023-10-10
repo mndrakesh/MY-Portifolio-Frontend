@@ -1,0 +1,40 @@
+
+<div class="main-div">
+   
+    <div class="division-caluculator">
+  
+    <h1><span class="back"><a routerLink="/projectmenu"><i class="fa-solid fa-arrow-left"></i><span class="back_logo">back</span></a></span>Calculator </h1>
+    <form id="calform">
+    <input class="display-box" name="answer">
+    <br><br>
+    <input class="a" type="button" value="." onclick="calform.answer.value+='.'">
+    <input class="a" type="button" value="(" onclick="calform.answer.value+='('">
+    <input class="a" type="button" value=")" onclick="calform.answer.value+=')'">
+  
+    <br><br>
+    <input class="a" type="button" value="1" onclick="calform.answer.value +='1'">
+    <input class="a" type="button" value="2" onclick="calform.answer.value+='2'">
+    <input class="a"type="button" value="3" onclick="calform.answer.value+='3'" >
+    <input class="a" type="button" value="+" onclick="calform.answer.value+='+'">
+    <br><br>
+    <input class="a" type="button" value="4" onclick="calform.answer.value +='4'">
+    <input class="a" type="button" value="5" onclick="calform.answer.value+='5'">
+    <input class="a" type="button" value="6" onclick="calform.answer.value+='6'" >
+    <input class="a" type="button" value="-" onclick="calform.answer.value+='-'">
+    <br><br>
+    <input class="a" type="button" value="7" onclick="calform.answer.value +='7'">
+    <input class="a" type="button" value="8" onclick="calform.answer.value+='8'">
+    <input class="a" type="button" value="9" onclick="calform.answer.value+='9'" >
+    <input class="a" type="button" value="*" onclick="calform.answer.value+='*'">
+    <br><br>
+    <input class="a" type="button" value="/" onclick="calform.answer.value +='/'">
+    <input class="a" type="button" value="0" onclick="calform.answer.value+='0'" >
+    <input class="a"type="button" value="%" onclick="calform.answer.value+='%'">
+    <input class="a" type="button" value="="
+    onclick="calform.answer.value=eval(calform.answer.value)">
+    <br><br>
+    <input id="clear" type="button" value="clear" onclick="calform.answer.value=' '">
+    <br><br>
+    </form>
+    </div>
+    </div>

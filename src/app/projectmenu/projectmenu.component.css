@@ -1,0 +1,250 @@
+*{
+    margin:0px;
+    padding:0px;
+    overflow-x:hidden;
+ 
+}
+.main{
+    width:100%;
+    height:100vh;
+    background-image: url("src/assets/image/project2.webp");
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color:white;
+  
+
+
+   
+  
+    
+   
+}
+
+.logout-logo{
+    float:left;
+    color:white;
+    margin-left:100px;
+  
+}
+
+.logout{
+    margin-left:10px;
+
+}
+.logout:hover{
+    margin-left:10px;
+    color: #00FFCB;
+    text-decoration: underline;
+ 
+}
+a{
+    text-decoration: none;
+}
+
+.my-project{
+    margin-right:100px;
+}
+
+.first_card{
+    width:35%;
+    height:35vh;
+   background-image:linear-gradient(red,black);
+
+    border-radius:10px;
+    box-shadow:-10px -10px 10px rgba(0, 0, 0, 0.13), 10px 10px 10px rgba(0, 0, 0, 0.176) ;
+   
+   margin:auto;
+   margin-top:50px;
+   color:white;
+ 
+  
+    
+}
+.second_card{
+    width:35%;
+    height:35vh;
+    background-image:linear-gradient(red,black);
+    margin:auto;
+    margin-top:60px;
+    border-radius:10px;
+    box-shadow:-10px -10px 10px rgba(0, 0, 0, 0.13), 10px 10px 10px rgba(0, 0, 0, 0.176) ;
+   
+     
+
+}
+
+.btn-warning:hover  {
+    background-color:darkcyan  ;
+    color:white;
+border:none;
+}
+/*----------------------------------MEDIA -QUARIES--------------------------------------------------*/
+
+@media(min-width:0px) and (max-width:319px)
+{
+    .main{
+        display:none;
+    }
+}
+@media(min-width:319px) and (max-width:448px)
+{
+    .main{
+        width:100%;
+        height:100vh;
+        
+    
+    
+       
+      
+        
+       
+    }
+    
+    .logout-logo{
+        float:left;
+        color:white;
+        margin-left:10px;
+        font-size:13px;
+    }
+    .my-project{
+        font-size:18px;
+        margin-left:120px;
+    }
+    
+   
+     .first_card{
+        width:75%;
+        height:40vh;
+       background-image:linear-gradient(red,black);
+    
+        border-radius:10px;
+        box-shadow:-10px -10px 10px rgba(0, 0, 0, 0.13), 10px 10px 10px rgba(0, 0, 0, 0.176) ;
+       
+       margin:auto;
+       margin-top:10px;
+       color:white;
+     font-size:12px;
+      
+        
+
+    }
+    .calsi{
+        font-size:18px;
+        
+
+    }
+    .second_card{
+        width:75%;
+        height:45vh;
+        background-image:linear-gradient(red,black);
+        margin:auto;
+        margin-top:10px;
+        border-radius:10px;
+        box-shadow:-10px -10px 10px rgba(0, 0, 0, 0.13), 10px 10px 10px rgba(0, 0, 0, 0.176) ;
+       
+        font-size:12px;
+    
+    }
+    
+    .stack{
+        font-size:18px;
+        
+
+    }
+    button{
+        width:120px !important;
+        height:35px;
+        font-size: 11px;
+     
+       
+   
+
+    }
+    
+}
+
+@media(min-width:449px) and (max-width:720px)
+{
+    .logout-logo{
+        float:left;
+        color:white;
+        margin-left:50px;
+    }
+    .my-project{
+        font-size:25px;
+    }
+     .first_card{
+        width:65%;
+        height:35vh;
+       background-image:linear-gradient(red,black);
+    
+        border-radius:10px;
+        box-shadow:-10px -10px 10px rgba(0, 0, 0, 0.13), 10px 10px 10px rgba(0, 0, 0, 0.176) ;
+       
+       margin:auto;
+       margin-top:70px;
+       color:white;
+     font-size:14px;
+      
+        
+    }
+    .second_card{
+        width:65%;
+        height:35vh;
+        background-image:linear-gradient(red,black);
+        margin:auto;
+        margin-top:60px;
+        border-radius:10px;
+        box-shadow:-10px -10px 10px rgba(0, 0, 0, 0.13), 10px 10px 10px rgba(0, 0, 0, 0.176) ;
+       
+        font-size:14px;
+    
+    }
+    button{
+        width:150px !important;
+        height:40px;
+        font-size: 15px;
+   
+
+    }
+}
+    
+
+
+@media(min-width:721px) and (max-width:1050px)
+{
+    
+     .first_card{
+        width:50%;
+        height:35vh;
+       background-image:linear-gradient(red,black);
+    
+        border-radius:10px;
+        box-shadow:-10px -10px 10px rgba(0, 0, 0, 0.13), 10px 10px 10px rgba(0, 0, 0, 0.176) ;
+       
+       margin:auto;
+       margin-top:50px;
+       color:white;
+     
+      
+        
+    }
+    .second_card{
+        width:50%;
+        height:35vh;
+        background-image:linear-gradient(red,black);
+        margin:auto;
+        margin-top:60px;
+        border-radius:10px;
+        box-shadow:-10px -10px 10px rgba(0, 0, 0, 0.13), 10px 10px 10px rgba(0, 0, 0, 0.176) ;
+       
+         
+    
+    }
+    
+    
+      
+}

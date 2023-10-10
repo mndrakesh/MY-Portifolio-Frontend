@@ -1,0 +1,345 @@
+
+<div class="home">
+    <!--  ==============MAIN-NAVBAR=========-->
+     <nav class="navbar navbar-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand"  routerLink="#">
+            <img src="assets/image/nse_logo.png" id="logo">
+          </a>
+          
+          <ul id="list" >
+            <li style="font-size: 18px;"><a routerLink="/projectmenu"><i class="fa-solid fa-arrow-left text-secondary"></i></a></li>
+            <li style="font-size: 18px;"><a routerLink="#"><i class="fa-solid fa-magnifying-glass text-secondary "></i></a></li>
+            <li style="font-size: 18px;"><a  routerLink="#"><i class="fa-solid fa-bell text-secondary "></i></a></li>
+            <li style="font-size: 22px;"><a  routerLink="#"><i class="fa-solid fa-circle-user text-secondary "></i></a></li>
+          </ul>
+        </div>
+      </nav>
+      
+      <!--==========MAIN-CARD==========-->
+      <div class="container-fluid content">
+      <!--=============SIDE-BAR=======-->
+       <div class="sidebar">
+        <aside >
+          <ul>
+            <li class="bg-warning" ><a  routerLink="#"><i class="fa-solid fa-indian-rupee-sign aside-icon"></i><br>Insurance <br>MIS</a></li>
+            <li><a  routerLink="#"><i class="fa fa-light fa-clock-rotate-left aside-icon"></i><br>Previous Submissions</a></li>
+            <li><a  routerLink="#"><i class="fa-solid fa-file-arrow-down aside-icon" ></i><br>Download Files</a></li>
+            <li><a  routerLink="#"><br>Generate Letters</a></li>
+            <li><a  routerLink="#"><i class=" fa fa-solid fa-clipboard-check aside-icon"></i><br>Penalty Approval</a></li>
+          </ul>                             
+        </aside>
+       </div>
+    
+       <div class="table-card">
+       <!--=====NAVIGATION FOR MASTERFILEBUTTON====-->
+        <div class="master_file_btn">
+          <a routerLink="/nse-master"> <button>PUBLISH MASTER FILE</button></a>
+        </div>
+    
+          <!--CARD-FOR-THE-TABLE-->
+        <div class="container ">
+         <div class="row">
+          <div class="col-md-11"> 
+            <div class="card">
+              <div class="card-body">
+              <!--=========TABLE CARD-NAVBAR========-->
+                <div class="card-navbar">
+                 <div class="head">
+                  <p>Insurance submission<br><span class="inner-head">MIS of current submission cycle:</span><span class="year">2020</span></p>
+                 </div>
+                 <div class="navbar2">
+                  <ul>
+                   <li></li>
+                   <li></li>
+                          
+                   <i class="fa-solid fa-down-long navbar2_icon"></i><button class="btn">Export</button>
+                   <i class="fa-solid fa-user-check navbar2_icon"></i><button class="btn">Assign HO <br>Maker</button>
+                   <i class=" fa fa-solid fa-bars navbar2_icon"></i><button class="btn">Clear <br>all search</button>
+                   <i class=" fa fa-sharp fa-light fa-arrow-rotate-right fa-flip-horizontal navbar2_icon"></i><button class="btn" id="clearSortButton" > Clear<br>Sort</button>
+                   <i class="fa fa-solid fa-eye navbar2_icon"></i>
+                   <li><button id="toggleButton">Show/Hide Columns</button></li>
+                  </ul>
+                 </div>
+                </div>
+    
+    
+               <!--=========================================TABLE======================================================================-->
+      
+               <div class="table">
+                <table>
+                 <!--=========TABLE-HEAD==========-->
+                  <thead>
+                    <tr>
+                      <th>
+                        <input class="form-check-input" type="checkbox" value="" id="check-box" id="selectAll" onchange="selectAllRows()">
+                       </th>
+                      <th>
+                        <label >Member Name</label>
+                        <a  routerLink="#"><span class="arrow-down"></span></a>
+                        <a  routerLink="#"><span class="arrow-up"></span></a>
+                      </th>
+                      <th>
+                        <label >Member Code</label>
+                        <a  routerLink="#"><span class="arrow-down"></span></a>
+                        <a  routerLink="#"><span class="arrow-up"></span></a>
+                       </th>
+                      <th>
+                       <label >Member status</label>
+                        <a  routerLink="#"><span class="arrow-down"></span></a>
+                        <a  routerLink="#"><span class="arrow-up"></span></a>
+                      </th>
+                      <th>
+                        <label >Inactive Date</label>
+                        <a  routerLink="#"> <span class="arrow-down"></span></a>
+                        <a  routerLink="#"><span class="arrow-up"></span></a> 
+                      </th>
+                      <th>
+                        <label >Penalty</label>
+                        <a  routerLink="#"><span class="arrow-down"></span></a>
+                        <a  routerLink="#"><span class="arrow-up"></span></a>
+                      </th>
+                      <th>
+                       <label style="position:relative;top:10px;">Penalty<br>Amountm(INR)</label>
+                       <a  routerLink="#"> <span class="arrow-down"></span></a>
+                       <a  routerLink="#"><span class="arrow-up"></span></a> 
+                      </th>
+                      <th>
+                        <label >Remarks</label>
+                        <a  routerLink="#"><span class="arrow-down"></span></a>
+                        <a  routerLink="#"> <span class="arrow-up"></span></a>
+                      </th>
+                      <th>
+                       <label style="position:relative;top:10px;">Last Policy<br>Valid upto</label>
+                       <a  routerLink="#"><span class="arrow-down"></span></a>
+                       <a  routerLink="#"><span class="arrow-up"></span></a>
+                      </th>
+                      <th>
+                       <label >Due Date</label>
+                        <a  routerLink="#"><span class="arrow-down"></span></a>
+                        <a  routerLink="#"> <span class="arrow-up"></span></a>
+                      </th>
+                      <th>
+                        <label style="position:relative;top:10px;" >Submission <br>Date</label>
+                        <a  routerLink="#"><span class="arrow-down"></span></a>
+                        <a  routerLink="#"><span class="arrow-up"></span></a>
+                      </th>
+                      <th class="hide1 hidden">
+                        <label style="position:relative;top:10px;" >New/Renewed <br>policy valid TO</label>
+                        <a  routerLink="#"><span class="arrow-down"></span></a>
+                        <a  routerLink="#"><span class="arrow-up"></span></a>
+                      </th>
+                      <th class="hide2 hidden">
+                       <label style="position:relative;top:10px;" >Insurance Policy</label>
+                       <a  routerLink="#"><span class="arrow-down"></span></a>
+                       <a  routerLink="#"><span class="arrow-up"></span></a>
+                      </th>
+                    </tr>
+    
+                    <tr>
+                                
+                      <th><br><br><br> <button id="clear" onclick="clearSelectedRows()" disabled>Clear</button>
+                      </th>     
+                      <th><form ><input type="text" class="form-control" placeholder="search" id="searchInput" onkeyup="toggleClearButton()"  > <br><button id="clearButton"  onclick="clearSearch()" disabled>Clear</button></form>
+                      </th>
+                      <th><form><input type="text" class="form-control" placeholder="search" id="searchInput_1" onkeyup="toggleClearButton_1() "> <br><button id="clearButton_1"  onclick="clearSearch_1()" disabled>Clear</button></form>
+                      </th>
+                      <th>
+                        <select id="searchInput_2" onchange="toggleClearButton_2()"   class="form-filter">
+                         <option value="" selected disabled>Filter</option>
+                         <option class="option">Eligible</option>
+                         <option class="option">Inactive</option>
+                        </select>
+                        <br>     
+                        <button id="clearButton_2" onclick="clearSearch_2()" disabled>Clear</button>
+                      </th>
+                      <th>
+                       <div id="customDateContainer" class="customDateClass">
+                        <input type="hidden" id="customDateInput" readonly>
+                        <i class="fa-solid fa-calendar-days"></i>&#160;
+                        <button type="button" id="datePickerButton">Filter by date</button>
+                        <br><br>
+                        <button type="button" id="inactive_clear_Button" disabled>Clear</button>
+                        </div>
+                      </th>
+                      <th>
+                       <select class="form-filter-2">
+                         <option value="" selected disabled>Filter</option>
+                         <option class="option">Penalty</option>
+                         <option class="option">NA</option>
+                       </select>
+                       <br>
+                      </th>
+                      <th><form><input type="text" class="form-control" placeholder="search" id="searchInput_3" onkeyup="toggleClearButton_3() "><br><button id="clearButton_3"  onclick="clearSearch_3()" disabled>Clear</button></form>
+                      </th>
+                      <th>
+                      </th>
+                      <th>
+                        <div id="customDateContainer_1" class="customDateClass-2">
+                          <input type="hidden" id="last_policy" readonly>
+                          <span class="fa-icon"><i class="fa-solid fa-calendar-days"></i></span>&#160;
+                          <button type="button" id="last_policy_btn">Filter by date</button>
+                        
+                        </div>
+                      </th>
+                      <th>
+                        <div id="customDateContainer_2"  class="customDateClass-2">
+                         <input type="hidden" id="due_date" readonly>
+                         <span class="fa-icon"><i class="fa-solid fa-calendar-days"></i></span>&#160;
+                         <button type="button" id="due_date_btn">Filter by date</button>
+                        </div>
+                      </th>
+                      <th>
+                       <div id="customDateContainer_3" class="customDateClass-3">
+                        <input type="hidden" id="submission_date" readonly>
+                        <span class="fa-icon"><i class="fa-solid fa-calendar-days"></i></span>&#160;
+                        <button type="button" id="submission_date_btn">Filter by date</button>
+                        <br><br>
+                        <button type="button" id="inactive_clear_Button1" disabled>Clear</button>
+                       </div>
+                      </th>
+                      <th>
+                       <div id="customDateContainer_4" class="hide1 hidden"  >
+                        <input type="hidden" id="new_renewed" readonly>
+                        <span class="fa-icon"><i class="fa-solid fa-calendar-days"></i></span>&#160;
+                        <button type="button" id="new_renewed_btn">Filter by date</button>
+                      </div>
+                      </th>
+                      <th>
+                      <!-- this is empty table data -->      
+                      </th>
+                    </tr>
+                  </thead>
+                  <!--=======================TABLE-BODY==========================================-->
+                  <tbody>
+                    <tr class="table-inside-data">
+                      <td>  <input  type="checkbox" class="rowCheckbox form-check-input border-2 border-danger" id="flexCheckDefault" onchange="checkClearButton()"></td>
+                      <td>Motilal Oswal</td>
+                      <td>10293</td>
+                      <td>
+                        <select id="statusSelect">
+                          <option value="eligible">Eligible</option>
+                          <option value="inactive">Inactive</option>
+                        </select>
+                      </td>
+                      <td>
+                       <div id="dateFieldContainer" style="display: none; text-decoration: underline;" >
+                        <div id="customDateContainer_4">
+                          <input type="hidden" id="inactive" readonly>
+                          <button type="button" id="inactive_btn" style="text-decoration: underline;">Choose Date&#160;&#160;</button>
+                          <span class="fa-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                        </div>
+                       </div>
+                      </td>
+                      <td>Penalty</td>
+                      <td> <a  routerLink="#" class="penalty_data" >1700.0</a></td>
+                      <td> <a  routerLink="#"class="remarks_data">View</a></td>
+                      <td>30/4/21</td>
+                      <td>30/4/21</td>
+                      <td>5/4/21</td>
+                      <td class="hide1 hidden"></td>
+                      <td class="hide1 hidden"></td>
+                     </tr>
+    
+                    <tr class="table-inside-data">
+                     <td>  <input  type="checkbox"    class="rowCheckbox form-check-input border-2 border-danger" id="flexCheckDefault" onchange="checkClearButton()"></td>
+                     <td>Sharekhan</td>
+                     <td>10378</td>
+                     <td>
+                      <select id="statusSelect">
+                       <option value="eligible">Eligible</option>
+                       <option value="inactive">Inactive</option>
+                      </select>
+                     </td>
+                     <td>
+                      <div id="dateFieldContainer" style="display: none; text-decoration: underline;" >
+                        <div id="customDateContainer_4">
+                         <input type="hidden" id="inactive" readonly>
+                         <button type="button" id="inactive_btn" style="text-decoration: underline;">Choose Date&#160;&#160;</button>
+                         <span class="fa-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                        </div>
+                      </div>
+                     </td>
+                     <td>Penalty</td>
+                     <td> <a  routerLink="#" class="penalty_data">00.0</a></td>
+                     <td> <a  routerLink="#" class="remarks_data">View</a></td>
+                     <td>35/4/21</td>
+                     <td>31/5/21</td>
+                     <td>31/5/21</td>
+                     <td class="hide1 hidden"></td>
+                     <td class="hide1 hidden"></td>
+                    </tr>
+                    
+                    <tr class="table-inside-data">
+                      <td>  <input  type="checkbox"  id="flexCheckDefault"    class="rowCheckbox form-check-input border-2 border-danger"  onchange="checkClearButton()"></td>
+                      <td>Motilal Oswal</td>
+                      <td>10293</td>
+                      <td>
+                        <select id="statusSelect">
+                          <option value="eligible">Eligible</option>
+                          <option value="inactive">Inactive</option>
+                        </select>
+                      </td>
+                      <td>
+                       <div id="dateFieldContainer" style="display: none; text-decoration: underline;" >
+                        <div id="customDateContainer_4">
+                          <input type="hidden" id="inactive" readonly>
+                          <button type="button" id="inactive_btn" style="text-decoration: underline;">Choose Date&#160;&#160;</button>
+                          <span class="fa-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                        </div>
+                       </div>
+                      </td>
+                      <td>Penalty</td>
+                      <td> <a  routerLink="#" class="penalty_data" >1700.0</a></td>
+                      <td> <a  routerLink="#" class="remarks_data">View</a></td>
+                      <td>30/4/21</td>
+                      <td>30/4/21</td>
+                      <td>5/4/21</td>
+                      <td class="hide1 hidden"></td>
+                      <td class="hide1 hidden"></td>
+                     </tr>
+                     <tr class="table-inside-data">
+                      <td>  <input  type="checkbox"  id="flexCheckDefault" class="rowCheckbox form-check-input border-2 border-danger" onchange="checkClearButton()"></td>
+                      <td>Motilal Oswal</td>
+                      <td>10293</td>
+                      <td>
+                        <select id="statusSelect">
+                          <option value="eligible">Eligible</option>
+                          <option value="inactive">Inactive</option>
+                        </select>
+                      </td>
+                      <td>
+                       <div id="dateFieldContainer" style="display: none; text-decoration: underline;" >
+                        <div id="customDateContainer_4">
+                          <input type="hidden" id="inactive" readonly>
+                          <button type="button" id="inactive_btn" style="text-decoration: underline;">Choose Date&#160;&#160;</button>
+                          <span class="fa-icon"><i class="fa-solid fa-calendar-days"></i></span>
+                        </div>
+                       </div>
+                      </td>
+                      <td>Penalty</td>
+                      <td> <a  routerLink="#" class="penalty_data" >1700.0</a></td>
+                      <td> <a  routerLink="#" class="remarks_data">View</a></td>
+                      <td>30/4/21</td>
+                      <td>30/4/21</td>
+                      <td>5/4/21</td>
+                      <td class="hide1 hidden"></td>
+                      <td class="hide1 hidden"></td>
+                    </tr>
+                  
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div> 
+        </div> 
+      </div> 
+    </div>
+                  
+                         
+            
+      <script src="assets/js/app.js"></script>
+      
+    
+    
+    

@@ -1,0 +1,30 @@
+
+.home-logo2{
+    color:black;
+    text-decoration: none;;
+    float:right;
+    
+    margin-left:50px;
+    margin-top:30px;
+}
+.home2{
+    margin-left:5px;
+}
+.register{
+    background-image: linear-gradient(darkcyan,black);
+    color:white;
+    padding-left:20px;
+    padding-right:20px;
+    border:none;
+}
+    
+.register:hover{
+    background-image: linear-gradient(aqua,black);
+    color:white;
+    padding-left:20px;
+    padding-right:20px;
+    border:solid 2px darkgrey;
+  
+   
+}
+

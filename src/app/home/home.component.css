@@ -1,0 +1,1038 @@
+
+
+
+*{
+  margin:0px;
+  padding:0px;
+ 
+  overflow-x:hidden;
+  
+}
+.port-folio{
+
+  width:100%;
+  height:100vh;
+  background-image: url("src/assets/image/background.jpg");
+  background-size:100% 110;
+  color:white;
+  overflow-x:hidden;
+  overflow-y: hidden;
+
+  
+}
+.nav-div{
+  height:8vh;
+  width:90%;
+
+}
+nav ul{
+  position:relative;
+  float:right;
+}
+
+a{
+  color:black;
+  text-decoration: none;
+  font-size:18px;
+}
+li{
+  float:left;
+  list-style: none;
+  margin-left:50px;
+}
+
+li{
+
+
+ background-image: linear-gradient(darkcyan,black);
+  padding-left: 14px;
+  padding-right: 14px;
+  border: 2px solid #00FFCB;
+  border-radius: 5px;
+  margin-top:10px;
+  padding-top:3px;
+  padding-bottom:3px;
+  color:white
+  
+
+}
+li:hover{
+
+
+background-image: linear-gradient(aquamarine,aqua);
+padding-left: 14px;
+padding-right: 14px;
+
+border-radius: 5px;
+margin-top:10px;
+padding-top:3px;
+padding-bottom:3px;
+color:black;
+border: 2px solid darkgray;
+
+
+}
+
+
+
+
+.project_navigation{
+  padding-top:13px;
+  height:10vh;
+
+  text-align:center;
+  align-items:center;
+}
+
+
+.btn-danger:hover {
+background-image: linear-gradient(rgba(0, 128, 0, 0.765),black);
+border: 2px solid #00FFCB;
+ 
+
+
+
+}
+
+.content{
+  height:78vh;
+  margin-top:3vh;
+
+}
+
+.profile{
+  height:78vh; 
+  float:left;
+  width:30%;
+  background-color:rgba(255, 166, 0, 0.578);
+  border-radius: 10px;
+  margin-left:70px;
+  padding-left:30px;
+  box-shadow:-15px -15px 5px rgba(128, 128, 128, 0.342);
+  color:black;
+ 
+
+}
+
+
+.profile .my_photo_area{
+height:20vh;
+width:100%;
+
+margin-top:10px;
+
+text-align:center;
+align-items: center;
+justify-content: center;
+
+ 
+}
+
+.profile .my_photo_area .my_photo
+{
+  width:40%;
+  height:20vh;
+  border-radius:50%;
+  border:solid 4px black;
+
+
+}
+
+
+.naming{
+  height:10vh;
+  width:100%;
+ 
+  margin-top:10px;
+font-weight:bolder;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+  
+ 
+}
+
+.contact{
+ 
+  width:100%;
+ 
+
+font-weight:bolder;
+  
+  color:black;
+     
+   
+}
+.contact-info{
+  text-decoration: underline;
+}
+
+.details{
+  height:78vh; 
+  float:left;
+  width:50%;
+  background-color:rgba(0, 0, 255, 0.5);
+  box-shadow:-15px -15px 5px rgba(128, 128, 128, 0.342);
+color:black;
+  border-radius: 10px;
+  margin-left:100px;
+
+
+
+}
+
+
+
+
+
+.details .about{
+  width:45%;
+  height:35vh;
+  background-color: rgba(250, 235, 215, 0.167);
+  float:left;
+  border-radius:10px;
+  margin-left:30px;
+  margin-top:20px;
+  padding-left:20px;
+
+}
+.aboutme_heading{
+text-decoration: underline;
+}
+.about .about-description 
+{
+margin-top:10px;  
+}
+.details .education{
+  width:45%;
+  height:35vh;
+  background-color: rgba(250, 235, 215, 0.167);
+  float:left;
+  margin-left:30px;
+  border-radius:10px;
+  margin-top:20px;
+  padding-left:20px;
+ 
+  
+
+}
+.education_heading{
+text-decoration: underline;
+}
+.details .education-description
+{
+margin-top:10px;
+}
+.details .skills{
+  width:45%;
+  height:35vh;
+  background-color: rgba(250, 235, 215, 0.167);
+  float:left;
+  margin-left:30px;
+  border-radius:10px;
+  margin-top:20px;
+  padding-left:20px;
+ 
+  
+
+  
+}
+.skill_heading{
+text-decoration: underline;
+}
+.skills .skll-description
+{
+  margin-top:10px;
+}
+
+.project_heading{
+text-decoration: underline;
+}
+.details .projects-info{
+  width:45%;
+  height:35vh;
+  background-color: rgba(250, 235, 215, 0.167);
+  float:left;
+  margin-left:30px;
+  border-radius:10px;
+  margin-top:20px;
+  padding-left:20px;
+ 
+  
+
+}
+.projects-info .project_description{
+margin-top:10px;
+}
+
+/**--------------MEDIA QUERIES FOR RESPONSIVE WEB PAGE_----------*/
+@media(min-width:0px) and (max-width:299px)
+{
+.port-folio
+{
+ display:none;
+}
+}
+
+@media(min-width:300px) and (max-width:532px)
+{
+
+        .port-folio
+        {
+          height:140vh;
+        }
+        
+        .nav-div{
+          height:10vh;
+          width:90%;
+       }
+       li{
+        float:left;
+        list-style: none;
+        margin-left:30px;
+     }
+      
+        .project_navigation{
+          margin-top:1px;
+          padding-top:6px;
+          height:10vh;
+          
+          text-align:center;
+          align-items:center;
+      }
+      
+
+.content{
+  height:115vh;
+  margin-top:3vh;
+
+
+}
+.profile{
+  height:115vh; 
+  float:left;
+  width:32%;
+
+  border-radius: 10px;
+  margin-left:3px;
+  padding-left:5px;
+  box-shadow:-15px -15px 5px rgba(128, 128, 128, 0.322);
+  color:black;
+  font-size:7px;
+ 
+
+}
+
+
+.profile .my_photo_area{
+height:15vh;
+width:100%;
+
+margin-top:10px;
+
+text-align:center;
+align-items: center;
+justify-content: center;
+font-size:9px;
+
+ 
+}
+
+.profile .my_photo_area .my_photo
+{
+  width:40%;
+  height:15vh;
+  border-radius:50%;
+  border:solid 4px black;
+  font-size:9px;
+
+
+}
+
+
+.naming{
+  height:20vh;
+  width:100%;
+ 
+  margin-top:10px;
+font-weight:bolder;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+  font-size:9px;
+ 
+}
+.name{
+  font-size:22px;
+}
+.contact-info{
+  font-size:16px;
+}
+
+
+.details{
+  height:115vh; 
+  float:left;
+  width:60%;
+ 
+color:black;
+  border-radius: 10px;
+  margin-left:10px;
+  box-shadow:-15px -15px 5px rgba(128, 128, 128, 0.342);
+  font-size:11px;
+  overflow-y:hidden;
+
+
+}
+
+
+.details .about{
+  width:90%;
+  height:25vh;
+  background-color: rgba(250, 235, 215, 0.167);
+  float:left;
+  border-radius:10px;
+  margin-left:10px;
+  margin-top:20px;
+  padding-left:5px;
+
+
+}
+.aboutme_heading
+{
+font-size:16px;
+}
+.about .about-description 
+{
+margin-top:10px;  
+}
+.details .education{
+  width:90%;
+  height:25vh;
+  background-color: rgba(250, 235, 215, 0.167);
+  float:left;
+  margin-left:10px;
+  border-radius:10px;
+  margin-top:20px;
+  padding-left:20px;
+  padding-left:5px;
+  
+
+}
+.education_heading
+{
+font-size:16px;
+}
+.details .education-description
+{
+margin-top:10px;
+}
+.details .skills{
+  width:90%;
+  height:25vh;
+  background-color: rgba(250, 235, 215, 0.167);
+  float:left;
+  margin-left:10px;
+  border-radius:10px;
+  margin-top:20px;
+  padding-left:5px;
+
+ 
+  
+
+  
+}
+.skill_heading
+{
+font-size:16px;
+}
+.skills .skll-description
+{
+  margin-top:10px;
+}
+
+.details .projects-info{
+  width:90%;
+  height:25vh;
+  background-color: rgba(250, 235, 215, 0.167);
+  float:left;
+  margin-left:10px;
+  border-radius:10px;
+  margin-top:10px;
+  padding-left:5px;
+ 
+  
+
+}
+.projects-info .project_description{
+margin-top:0px;
+}
+.project_heading
+{
+font-size:16px;
+}
+
+
+}
+
+
+
+
+@media(min-width:533px) and (max-width:716px)
+{
+.port-folio{
+
+  width:100%;
+  height:140vh;
+
+  overflow-x:hidden;
+
+  
+}
+.project_navigation{
+
+padding-top:10px;
+
+}
+.content{
+  height:115vh;
+  margin-top:3vh;
+
+
+}
+.profile{
+  height:115vh; 
+  float:left;
+  width:28%;
+  
+  border-radius: 10px;
+  margin-left:10px;
+  padding-left:10px;
+  box-shadow:-15px -15px 5px rgba(128, 128, 128, 0.322);
+  color:black;
+  font-size:9px;
+ 
+
+}
+
+.profile .my_photo_area{
+height:15vh;
+width:100%;
+
+margin-top:10px;
+
+text-align:center;
+align-items: center;
+justify-content: center;
+font-size:9px;
+
+ 
+}
+
+.profile .my_photo_area .my_photo
+{
+  width:40%;
+  height:15vh;
+  border-radius:50%;
+  border:solid 4px black;
+  font-size:9px;
+
+
+}
+
+
+.naming{
+  height:20vh;
+  width:100%;
+ 
+  margin-top:10px;
+font-weight:bolder;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+  font-size:9px;
+ 
+}
+.name{
+  font-size:20px;
+}
+.contact-info{
+  font-size:18px;
+}
+
+
+.details{
+  height:115vh; 
+  float:left;
+  width:50%;
+
+color:black;
+  border-radius: 10px;
+  margin-left:100px;
+  box-shadow:-15px -15px 5px rgba(128, 128, 128, 0.342);
+  font-size:11px;
+  overflow-y:hidden;
+
+
+}
+
+
+.details .about{
+  width:80%;
+  height:25vh;
+  background-color: rgba(250, 235, 215, 0.167);
+  float:left;
+  border-radius:10px;
+  margin-left:30px;
+  margin-top:20px;
+  padding-left:20px;
+
+}
+.aboutme_heading{
+font-size:18px;
+}
+.about .about-description 
+{
+margin-top:5px;  
+}
+.details .education{
+  width:80%;
+  height:25vh;
+  background-color: rgba(250, 235, 215, 0.167);
+  float:left;
+  margin-left:30px;
+  border-radius:10px;
+  margin-top:20px;
+  padding-left:20px;
+ 
+  
+
+}
+.education_heading{
+font-size:18px;
+}
+.details .education-description
+{
+margin-top:5px;
+}
+.details .skills{
+  width:80%;
+  height:25vh;
+  background-color: rgba(250, 235, 215, 0.167);
+  float:left;
+  margin-left:30px;
+  border-radius:10px;
+  margin-top:20px;
+  padding-left:20px;
+ 
+  
+
+  
+}
+.skill_heading{
+font-size:18px;
+}
+.skills .skll-description
+{
+  margin-top:5px;
+}
+.project_heading{
+font-size:18px;
+}
+.details .projects-info{
+  width:80%;
+  height:25vh;
+  background-color: rgba(250, 235, 215, 0.167);
+  float:left;
+  margin-left:30px;
+  border-radius:5px;
+  margin-top:20px;
+  padding-left:20px;
+ 
+  
+
+}
+
+
+}
+
+
+
+
+
+
+@media(min-width:717px) and (max-width:904px)
+{
+.port-folio{
+
+  width:100%;
+  height:140vh;
+  
+  overflow-x:hidden;
+
+  
+}
+.project_navigation{
+
+padding-top:15px;
+height:8vh;
+
+}
+.content{
+  height:115vh;
+  margin-top:5vh;
+
+
+}
+.profile{
+  height:115vh; 
+  float:left;
+  width:25%;
+ 
+  border-radius: 10px;
+  margin-left:70px;
+  padding-left:30px;
+  box-shadow:-15px -15px 5px rgba(128, 128, 128, 0.322);
+  color:black;
+  font-size:9px;
+ 
+
+}
+
+
+
+.profile .my_photo_area{
+height:15vh;
+width:100%;
+
+margin-top:10px;
+
+text-align:center;
+align-items: center;
+justify-content: center;
+font-size:9px;
+
+ 
+}
+
+.profile .my_photo_area .my_photo
+{
+  width:40%;
+  height:15vh;
+  border-radius:50%;
+  border:solid 4px black;
+  font-size:9px;
+
+
+}
+
+
+.naming{
+  height:20vh;
+  width:100%;
+ 
+  margin-top:10px;
+font-weight:bolder;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+  font-size:9px;
+ 
+}
+.name{
+  font-size: 25px;
+}
+.contact-info{
+  font-size: 20px;
+}
+
+
+.details{
+  height:115vh; 
+  float:left;
+  width:50%;
+  
+color:black;
+  border-radius: 10px;
+  margin-left:100px;
+  box-shadow:-15px -15px 5px rgba(128, 128, 128, 0.342);
+  font-size:11px;
+  overflow-y:hidden;
+
+
+}
+
+
+
+.details .about{
+  width:80%;
+  height:25vh;
+  background-color: rgba(250, 235, 215, 0.167);
+  float:left;
+  border-radius:10px;
+  margin-left:30px;
+  margin-top:20px;
+  padding-left:20px;
+
+}
+.aboutme_heading
+{
+font-size:20px;
+}
+.about .about-description 
+{
+margin-top:10px;  
+}
+.details .education{
+  width:80%;
+  height:25vh;
+  background-color: rgba(250, 235, 215, 0.167);
+  float:left;
+  margin-left:30px;
+  border-radius:10px;
+  margin-top:20px;
+  padding-left:20px;
+ 
+  
+
+}
+.education_heading
+{
+font-size:20px;
+}
+.details .education-description
+{
+margin-top:10px;
+}
+.details .skills{
+  width:80%;
+  height:25vh;
+  background-color: rgba(250, 235, 215, 0.167);
+  float:left;
+  margin-left:30px;
+  border-radius:10px;
+  margin-top:20px;
+  padding-left:20px;
+ 
+  
+
+  
+}
+.skill_heading
+{
+font-size:20px;
+}
+.skills .skll-description
+{
+  margin-top:10px;
+}
+.project_heading
+{
+font-size:20px;
+}
+.details .projects-info{
+  width:80%;
+  height:25vh;
+  background-color: rgba(250, 235, 215, 0.167);
+  float:left;
+  margin-left:30px;
+  border-radius:10px;
+  margin-top:20px;
+  padding-left:20px;
+ 
+  
+
+}
+
+
+}
+
+
+
+
+
+@media(min-width:905px) and (max-width:1240px)
+{
+
+
+.profile{
+  height:78vh; 
+  float:left;
+  width:30%;
+ 
+  border-radius: 10px;
+  margin-left:70px;
+  padding-left:30px;
+  box-shadow:-15px -15px 5px rgba(128, 128, 128, 0.322);
+  color:black;
+  font-size:13px;
+ 
+
+}
+
+.project_navigation{
+
+padding-top:15px;
+
+}
+.content{
+height:78vh;
+margin-top:3vh;
+
+}
+.profile{
+height:78vh;
+}
+.profile .my_photo_area{
+height:20vh;
+width:100%;
+
+margin-top:10px;
+
+text-align:center;
+align-items: center;
+justify-content: center;
+font-size:13px;
+
+ 
+}
+
+.profile .my_photo_area .my_photo
+{
+  width:40%;
+  height:20vh;
+  border-radius:50%;
+  border:solid 4px black;
+  font-size:13px;
+
+
+}
+
+
+.naming{
+  height:10vh;
+  width:100%;
+ 
+  margin-top:10px;
+font-weight:bolder;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+  font-size:13px;
+ 
+}
+.name{
+  font-size:30px;
+}
+
+.contact{
+ 
+  width:100%;
+
+
+font-weight:bolder;
+  
+  color:black;
+  font-size:13px;
+     
+   
+}
+.contact-info{
+  font-size:20px;
+  text-decoration: underline;
+}
+
+
+.details{
+  height:78vh; 
+  float:left;
+  width:50%;
+  
+color:black;
+  border-radius: 10px;
+  margin-left:100px;
+  box-shadow:-15px -15px 5px rgba(128, 128, 128, 0.342);
+  font-size:13px;
+
+
+}
+
+.details .about{
+  width:40%;
+  height:35vh;
+  background-color: rgba(250, 235, 215, 0.167);
+  float:left;
+  border-radius:10px;
+  margin-left:30px;
+  margin-top:20px;
+  padding-left:20px;
+
+}
+.about_heading{
+text-decoration: underline;
+}
+.about .about-description 
+{
+margin-top:10px;  
+}
+.details .education{
+  width:40%;
+  height:35vh;
+  background-color: rgba(250, 235, 215, 0.167);
+  float:left;
+  margin-left:30px;
+  border-radius:10px;
+  margin-top:20px;
+  padding-left:20px;
+ 
+  
+
+}
+.education_heading{
+text-decoration: underline;
+}
+.details .education-description
+{
+margin-top:10px;
+}
+.details .skills{
+  width:40%;
+  height:35vh;
+  background-color: rgba(250, 235, 215, 0.167);
+  float:left;
+  margin-left:30px;
+  border-radius:10px;
+  margin-top:20px;
+  padding-left:20px;
+ 
+  
+
+  
+}
+.skill_heading{
+text-decoration: underline;
+}
+.skills .skll-description
+{
+  margin-top:10px;
+}
+
+.details .projects-info{
+  width:40%;
+  height:35vh;
+  background-color: rgba(250, 235, 215, 0.167);
+  float:left;
+  margin-left:30px;
+  border-radius:10px;
+  margin-top:20px;
+  padding-left:20px;
+ 
+  
+
+}
+.project_heading{
+text-decoration: underline;
+}
+
+}
+ 

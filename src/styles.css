@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap');
+
+body{
+  font-family: sans-serif;
+  overflow-x:hidden;
+
+}
+.navbar{
+padding:20px;
+}
+.navbar a{
+  text-decoration: none;
+  color:white;
+
+
+}

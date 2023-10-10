@@ -1,0 +1,406 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+    
+   
+  }
+  /*master-file css properties*/
+  .master_file{
+    height: 100vh;
+  }
+  /*navbr- css operations*/
+  .navbar{
+  
+    height: 10vh;
+    width: 100%;
+    }
+    #logo{
+      width: 120px;
+      height: 40px;
+      margin-left: 15px;
+      }
+      #list{ 
+      display: inline-flex;
+      list-style: none;
+      }
+      #list li{
+      width: 70px;
+      }
+      .card-header{
+        margin-top: -100px;
+        
+      }
+      /*buckb-btton css-properties*/
+      .backbutton a{
+    
+        text-decoration: none;
+        color: black;
+        margin-top: 8px;
+      }
+      .backbutton{
+        display: flex;
+        width: 100%;
+        height: 10vh;
+        
+        padding-top: 15px;
+        
+        
+      }
+      .backbutton .back-icon{
+        color:rgba(0, 0, 0, 0.674);
+      }
+      
+  
+  /*rgb(255,103,0)*/
+  /*main-crad-creation css properties
+  /* --------------------card 1 ---------------------------*/
+  .generate_master_card{
+    height: 70vh;
+    
+    }
+  .main{
+    box-shadow: 0 3px 6px 0 lightgray, 0 3px 8px 0 lightgray;
+    width: 86%;
+    padding: 115px;
+    padding-top: 30px;
+    height: 65vh;
+    border-radius: 0px;
+    border: none;
+    margin: 0 auto; 
+    
+    
+  }
+  /*auto-generated card-css properties*/
+  .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .heading{
+    font-size: 25px;
+    font-weight: 700;
+    color: indigo;
+  }
+  .sub-head{
+    font-size: 18px;
+    font-weight: 500;
+    color: gray;
+    .auto_generated_card{
+  
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      }
+     
+    
+    
+  }
+  .download-btn p{
+    font-size: 13px;
+    font-weight: bold;
+    color: indigo;
+  }
+  .download_button{
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    border-radius: 7px;
+   color: rgb(255,103,0);
+   border-width: 2px;
+   border-color: rgb(124, 118, 118);
+   margin-left: 20px;
+   margin-top: 30px;
+  
+  }
+  .upload_section{
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    padding-top: 50px;
+    
+    }
+  .upload-link a{ 
+  text-decoration: none;
+  font-size: 13px;
+    font-weight: bold;
+    color: indigo;
+  
+  
+  }
+  .upload_button{
+    margin-top: 20px;
+     color: indigo;
+      border:none;
+  
+  
+  
+  }
+  
+  
+  
+  
+  
+  /* -------------------master card- css properties ---------------------------------*/
+  .final_master_card{
+    width: 30%;
+    height: 20vh;
+    box-shadow: 0 3px 6px 0 lightgray, 0 3px 8px 0 lightgray;
+    border-radius: 0px;
+    border: none;
+    }
+    .heading-icons{
+      display: flex;
+      justify-content: space-between;
+      color: rgba(255, 102, 0, 0.324);
+      
+    }
+    .heading-icons p{ 
+      font-size: 14px;
+      font-weight: bold;
+      color: indigo;
+      padding-top: 10px;
+      padding-left: 20px;
+    }
+    
+    .space{
+    display: block;
+    }
+    
+    
+  .validate_button{
+    width: 120px;
+    height: 40px;
+    background-color: white;
+    border-radius: 7px;
+   color: rgba(255, 102, 0, 0.208);
+   border-width: 2px;
+   border-color: rgb(124, 118, 118);
+   margin-left: 20px;
+   margin-top: 30px;
+  
+  }
+  
+  
+  /* -----------------------card footer-for publish button css properties --------------------------*/
+  .footer .publish_button{
+    background-color:rgba(255, 102, 0, 0.253) ;
+    border:rgb(255,103,0);
+    color: white;
+    width: 200px;
+    margin: 0 auto; 
+    margin-top: 20px;
+    margin-right: 100px;
+    border-radius: 7px;
+    height:40px;
+      
+      
+    
+  }
+  
+  .footer{
+  height: 10vh;
+  box-shadow: 5px 5px 10px 2px rgba(166, 163, 163, 0.8);
+  border-radius: 0px;
+  border: none;
+  
+  }
+  .icons{
+   
+  font-size: 21px;
+  padding-right: 40px;
+  padding-top: 10px;
+  }
+  /*=========== media query operations for responsive web page ==========*/
+  @media (min-width: 0px) and (max-width: 420px){
+    .master_file{
+      display: none;
+    }
+    }
+  
+    @media (min-width: 421px) and (max-width: 600px){
+      .final_master_card{
+        width: 250px;
+        margin-top: -45px;
+        height: 12vh;
+       
+        
+      }
+      .icons{
+        font-size: 13px;
+        padding-right: 5px;
+      }
+      .space{
+        display: none;
+      }
+      .heading{
+        font-size: 16px;
+        
+       
+      }
+      .sub-head{
+        font-size: 14px;
+      }
+      .upload_section{
+        display: flex;
+        flex-direction: column;
+        
+        height: 10vh;
+       
+      }
+      .upload-link{
+       
+        position: relative;
+        bottom: 50px;
+      }
+      .download_button{
+        position: relative;
+        bottom: 20px;
+        right: 10px;
+        height: 30px;
+      }
+      .validate_button{
+        position: relative;
+        bottom: 30px;
+        right: 10px;
+        height: 25px;
+        
+      }
+      .publish{
+        position: relative;
+        top: 8px;
+        left: 30px;
+      }
+      .footer .publish_button{
+        position: relative;
+      
+        left:10px;
+        height: 30px;
+        width:140px;
+        margin-bottom:20px;
+  
+      }
+      
+      .backbutton a{
+       
+        position: relative;
+        right: 80px;
+      }
+      
+      }
+  
+      
+      
+      @media (min-width: 601px) and (max-width: 800px){
+        .final_master_card{
+          width: 60%;
+          height: 18vh;
+        }
+        .icons{
+          font-size: 16px;
+          padding-right: 5px;
+        }
+        .validate{
+          position: relative;
+          bottom: 10px;
+          
+        }
+        .validate_button{
+          position: relative;
+          bottom: 20px;
+          right: 10px;
+          height: 30px;
+         
+        }
+        .backbutton a{
+         
+          position: relative;
+          right: 40px;
+        }
+        
+        .back-icon{
+          
+          position: relative;
+          right: 40px;
+        }
+        }
+        .footer .publish_button{
+     
+          margin-right:40px;
+           height: 40px;
+           width:200px;
+       
+         }
+  
+  
+  @media (min-width: 801px) and (max-width: 1200px){
+  .final_master_card{
+    width: 40%;
+    height: 20vh;
+  }
+  .icons{
+    font-size: 18px;
+    padding-right: 5px;
+  }
+  .footer .publish_button{
+     
+    margin-right:100px;
+     height: 40px;
+     width:200px;
+  
+   }
+  
+  
+  }
+  
+  @media (min-width: 1201px) and (max-width: 1500px){
+    .final_master_card{
+      width: 30%;
+      height: 20vh;
+    }
+    .icons{
+      font-size: 18px;
+      padding-right: 5px;
+    }
+    .footer .publish_button{
+       
+      margin-right:100px;
+       height: 40px;
+       width:200px;
+    
+     }
+    
+    
+    }
+  @media (min-width:1501px) and (max-width:2000px){
+    .final_master_card{
+      width: 30%;
+      height: 20vh;
+    }
+    .icons{
+      font-size: 18px;
+      padding-right: 5px;
+    }
+     .footer .publish_button{
+     
+     margin-right:140px;
+      height: 40px;
+      width:200px;
+  
+    }
+    
+    
+    }
+  
+  
+  
+  @media (max-height:689px){
+  .master_file{
+  display: none;
+  }
+  }
+  
+  

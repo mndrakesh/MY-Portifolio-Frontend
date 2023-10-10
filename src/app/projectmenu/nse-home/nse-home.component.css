@@ -1,0 +1,610 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+  
+    
+  }
+  /*  =================MAIN-NAVBAR=============*/
+  
+  .navbar{
+    width: 100%;
+    height: 70px;
+  }
+  
+  #logo{
+    width: 120px;
+    height: 40px;
+    margin-left: 15px;
+  }
+  #list{ 
+    display: inline-flex;
+    list-style: none;
+  }
+  #list li{
+    width: 70px;
+  }
+  /*-=============SIDE-BAR======= */
+  .sidebar{
+    background-color: indigo;
+    width: 80px;
+    height: 100vh;
+    text-align: center;
+  }
+  .sidebar ul{
+    list-style: none;
+  }
+  
+  
+  .sidebar ul li {
+    text-decoration: none;
+    border-bottom: solid #fff 1px;
+    line-height: 20px;
+  }
+  .sidebar ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+    
+    font-family: sans-serif;
+    
+    
+  }
+  
+  .aside-icon{
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  .content{
+    display: flex;
+    flex-direction: row;
+  }
+ 
+  
+ 
+  
+  
+  
+  /** MASTER FILE BUTTON===========================================================================================================**/
+  
+  .table-card{
+    background-color: #f8f9fa;
+    width: 95%;
+    padding-left: 50px;
+  }
+  
+  .master_file_btn{
+    height: 70px;
+    text-align: right;
+    
+    
+  }
+  .master_file_btn button{
+    margin-top: 20px;
+    color: #fff;
+    background-color: rgb(255, 111, 0);
+    margin-right: 130px;
+    width: 220px;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: none;
+  }
+  
+  
+  
+  /**CARD HEADER========================================================================================================================**/
+  .card{
+   
+    border: none;
+  }
+  .card-body{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px;
+    box-shadow: 5px 5px 10px 2px rgba(166, 163, 163, 0.8);
+  }
+  .card-navbar{
+   
+   display: flex;
+   justify-content: space-between;
+    
+  
+  }
+  .head{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 25%;
+    font-size: 22px;
+    font-weight: bold;
+    color: indigo;
+  }
+  .inner-head{
+    font-size: 15px;
+    font-weight: 600;
+    color: gray;
+    
+  }
+  .year{
+    font-size: 15px;
+  }
+  .navbar2{
+    width: 75%;
+  }
+  .navbar2 ul{
+    
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+    
+    
+  }
+  .navbar2 ul li{
+    width: 100px;
+    margin-left: 10px;
+    
+  }
+ 
+  .navbar2_icon{
+    
+   margin-top:20px;
+    font-size: 18px;
+    color: rgb(255, 111, 0);
+}
+  .navbar2 button{
+    color: gray;
+    width:100px;
+    margin-top:5px;
+    font-size:15px;
+
+}
+#clearSortButton:disabled{
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+ #clearSortButton{
+  color: gray;
+  background-color: transparent;
+  border: none;
+  font-family: sans-serif;
+  font-size: 14px;
+ }
+  
+  /*=================================datepicker============================================*/
+
+  #datePickerButton, #last_policy_btn, #due_date_btn, #submission_date_btn, #inactive_btn, #toggleButton, #new_renewed_btn{
+    background-color: transparent;
+    border: none;
+    color: gray;
+    
+  }
+  .fa-calendar-days{
+    color: rgb(253, 135, 44);
+  }
+  
+  
+  
+  
+  /**TABLE CSS CODE==========================================================================================================================**/
+ 
+  th{
+    height:50px;
+  
+  }
+  td{
+    height:50px;
+    border:none;
+  
+  }
+  
+  table{
+    
+    width:100%;
+    overflow-y:auto
+  }
+  .table tr {
+    border: none;
+  }
+/* =================TABLE-HEAD========================*/
+
+  .form-check-input{
+    border:solid 2px rgb(255, 102, 0);
+    width:20px;height:20px;
+    margin-left:10px;
+   
+    
+  }
+   
+ 
+  
+ .arrow-down {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    vertical-align: middle;
+    position:relative;
+    left:10px;
+    
+    
+  }
+  .arrow-up {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    vertical-align: middle;
+    margin-bottom:30px;
+  
+  
+    
+  }
+  
+  .arrow-up {
+    border-bottom: 5px solid midnightblue;
+  }
+  
+  .arrow-down {
+    border-top: 5px solid midnightblue;
+  }
+  label{
+    font-size:12px;
+    color:midnightblue;
+  }
+   .form-control{
+    margin-top:20px;
+   
+
+    width:100px;
+    height:30px;
+    font-size:14px;
+    font-family: sans-serif;
+   
+   
+  }
+  .form-filter{
+
+   
+
+    width:70px;
+    height:30px;
+    font-size:14px;
+    font-family: sans-serif;
+ 
+   margin-top:20px;
+   margin-left:10px;
+   
+  }
+  .form-filter-2{
+
+   
+
+    width:70px;
+    height:30px;
+    font-size:14px;
+    font-family: sans-serif;
+    margin-bottom:20px;
+    margin-left:10px;
+  
+   
+  }
+ .customDateClass
+ {
+margin-top:30px;
+ } 
+ .customDateClass-2
+ {
+margin-bottom:30px;
+ } 
+ .customDateClass-3
+ {
+margin-top:10px;
+ } 
+ input[type=date]:required:invalid::-webkit-datetime-edit {
+  color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+  color: black !important;
+}
+ 
+ #clear:disabled {
+  color: rgb(245, 180, 130);
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-family: sans-serif;
+ 
+ }
+ #clear{
+   color: rgb(255, 111, 0);
+   background-color: transparent;
+   border: none;
+   font-family: sans-serif;
+   font-size: 14px;
+ }
+
+ /*===input-1===**/
+
+
+#searchInput{
+padding-left:10px;
+
+}
+
+
+#clearButton:disabled {
+ color: rgb(245, 180, 130);
+ background-color: transparent;
+ border: none;
+ font-size: 14px;
+ font-family: sans-serif;
+ margin-left:60px;
+
+
+}
+#clearButton{
+  color: rgb(255, 111, 0);
+  background-color: transparent;
+  border: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  margin-left:60px;
+  
+
+
+}
+
+/*==input-2===**/
+#searchInput_1{
+  padding-left:10px;
+}
+
+#clearButton_1:disabled {
+  color: rgb(245, 180, 130);
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin-left:60px;
+ 
+
+ 
+ 
+ }
+ #clearButton_1{
+   color: rgb(255, 111, 0);
+   background-color: transparent;
+   border: none;
+   font-family: sans-serif;
+   font-size: 14px;
+
+   margin-left:60px;
+
+ }
+ 
+
+ /*===select===**/
+
+ #clearButton_2:disabled {
+  color: rgb(245, 180, 130);
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin-left:30px;
+
+  margin-top:30px;
+
+
+  
+
+ 
+ }
+ #clearButton_2{
+   color: rgb(255, 111, 0);
+   background-color: transparent;
+   border: none;
+   font-family: sans-serif;
+   font-size: 14px;
+   margin-left:30px;
+   margin-top:30px;
+
+
+ }
+ 
+
+/*==Penalty==**/
+#searchInput_3{
+padding-left:10px;
+}
+
+#clearButton_3:disabled ,#inactive_clear_Button:disabled{
+color: rgb(245, 180, 130);
+background-color: transparent;
+border: none;
+font-size: 14px;
+font-family: sans-serif;
+margin-left:60px;
+
+
+
+}
+#clearButton_3,#inactive_clear_Button{
+ color: rgb(255, 111, 0);
+ background-color: transparent;
+ border: none;
+ font-family: sans-serif;
+ font-size: 14px;
+ margin-left:60px;
+
+
+}
+
+
+#clearButton_3:disabled ,#inactive_clear_Button1:disabled{
+  color: rgb(245, 180, 130);
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin-left:60px;
+  
+  
+  
+  }
+  #clearButton_3,#inactive_clear_Button1{
+   color: rgb(255, 111, 0);
+   background-color: transparent;
+   border: none;
+   font-family: sans-serif;
+   font-size: 14px;
+   margin-left:60px;
+  
+  
+  }
+/*==hide/show button==*/
+
+.hidden {
+display: none;
+margin-bottom:30px;
+
+}
+
+/*===================table-body====================*/
+
+
+  
+tbody tr:nth-of-type(even){
+  background-color:#f3f6f4;
+  }
+  
+ .table-inside-data td{
+    font-size:14px;
+    font-family: sans-serif;
+    color:lightslategray;
+  
+  }
+ .border-danger{
+  border-color: rgb(255, 102, 0) !important;
+ }
+  
+  
+  select{
+    color:lightslategray;
+     border:none;
+     background-color:white;
+    
+     
+     
+  }
+ 
+ 
+  .penalty_data{text-decoration: underline; 
+    color: rgb(255, 77, 0);
+  }
+  .remarks_data{text-decoration: underline;
+     color:lightslategray; 
+  }
+  
+  
+
+
+
+
+ /*=================================---------------------------------**/
+
+  
+  /** TABLE RESPONSIVE==============================================================================================**/
+  
+  @media (min-width:0px) and (max-width:449px) {
+
+    .home{
+      display: none;
+    }
+  }
+  @media (min-width:450px) and (max-width:800px) {
+    
+    
+      .table {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+      }
+      .table td,
+      .table th {
+        white-space: nowrap;
+      }
+      .sidebar {
+        width: 11%;
+      }
+      .sidebar ul li a{
+        font-size: 9px;
+      }
+      
+      .navbar2 button{
+        font-size: 12px;
+      }
+      .navbar2_icon{
+        font-size: 15px;
+      }
+      .head{
+        font-size: 18px;
+      }
+      .inner-head{
+        font-size: 11px;
+      }
+      .year{
+        font-size: 12px;
+      }
+      .master_file_btn button{
+         margin-right: 50px;
+         width: 150px;
+         font-size: 12px;
+      }
+      .card-navbar{
+        display: flex;
+        flex-direction: column;
+      }
+      .head{
+        width: 100%;
+      }
+      .navbar2{
+        width: 100%;
+      }
+      .card{
+        margin-right: 50px;
+      }
+  
+    }
+    
+    @media (min-width:801px) and (max-width:2000px) {
+  
+      .table {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+      }
+      .table td,
+      .table th {
+        white-space: nowrap;
+      }
+      .master_file_btn button{
+        margin-top: 20px;
+        color: #fff;
+        background-color: rgb(255, 111, 0);
+        margin-right: 130px;
+        width: 220px;
+        height: 40px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-family: sans-serif;
+        border: none;
+        
+      }
+
+    }
